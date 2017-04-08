@@ -1,0 +1,37 @@
+.tour__header {
+  position: relative;
+  min-height: 260px;
+  color: #fff;
+  
+  background-image: url("../../img/city-tour-praha.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.tour__name {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  padding-top: 140px;
+  padding-bottom: 20px;
+  background: linear-gradient(0deg, #002e4b 0%, #002e4b 0%, rgba(0, 46, 75, 0) 100%);
+}
+
+.tour__title {
+  margin: 0;
+  font-family: "Intro", sans-serif;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.tour__caption {
+  display: block;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 400;
+  text-align: center;
+}

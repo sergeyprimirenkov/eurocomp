@@ -1,0 +1,118 @@
+.tour-info {
+  padding-top: 13px;
+  background-color: #6dc7ff;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 300;
+}
+
+.tour-info__title {
+  margin: 0;
+  margin-bottom: 10px;
+  font-family: "Intro", sans-serif;
+  font-size: 18px;
+  line-height: 18px;
+  text-align: center;
+  color: #fff;
+}
+
+
+
+.tour-info img {
+  //min-width: 84px;
+  //min-height: 84px;
+}
+
+.tour-info .carousel {
+  position: relative;
+  padding-top: 10px;
+  padding-right: 14px;
+  padding-bottom: 10px;
+  padding-left: 16px;
+  margin-bottom: 5px;
+  background-color: #fff;
+  border: 1px solid #009dff;
+  border-radius: 10px;
+}
+
+.tour-info .carousel-inner {
+  position: relative;
+}
+
+.tour-info .carousel .col-xs-4 {
+  padding: 0;
+  padding-right: 2px;
+  &:last-of-type {
+    //padding-right: 0;
+  }
+}
+
+.tour-info .carousel-control.left,
+.tour-info .carousel-control.right {
+  position: absolute;
+  width: 17px;
+  height: 17px;
+  top: 50%;
+  margin-top: -8.5px;
+  border: 1px solid #009dff;
+  border-radius: 50%;
+  background-image: none;
+  background-repeat: no-repeat;
+  background-position: center 2px;
+  background-color: #fff;
+  opacity: 1;
+  z-index: 10;
+}
+
+.tour-info .carousel .carousel-control.left {
+  left: -8px;
+  background-image: url("../../img/icons/left-arrow-blue-small.png");
+}
+
+.tour-info .carousel-control.right {
+  right: -8px;
+  background-image: url("../../img/icons/right-arrow-blue-small.png");
+}
+
+@media all and (min-width: 320px) {
+  .tour-info .carousel-showsixmoveone .carousel-inner > .active.left,
+  .tour-info .carousel-showsixmoveone .carousel-inner > .prev {
+    left: -33.333%;
+  }
+  .tour-info .carousel-showsixmoveone .carousel-inner > .active.right,
+  .tour-info .carousel-showsixmoveone .carousel-inner > .next {
+    left: 33.333%;
+  }
+  .tour-info .carousel-showsixmoveone .carousel-inner > .left,
+  .tour-info .carousel-showsixmoveone .carousel-inner > .prev.right,
+  .tour-info .carousel-showsixmoveone .carousel-inner > .active {
+    left: 0;
+  }
+  .tour-info .carousel-showsixmoveone .carousel-inner .cloneditem-1,
+  .tour-info .carousel-showsixmoveone .carousel-inner .cloneditem-2 {
+    display: block;
+  }
+}
+
+@media all and (min-width: 320px) and (transform-3d),
+all and (min-width: 320px) and (-webkit-transform-3d) {
+  .tour-info .carousel-showsixmoveone .carousel-inner > .item.active.right,
+  .tour-info .carousel-showsixmoveone .carousel-inner > .item.next {
+    -webkit-transform: translate3d(33.333%, 0, 0);
+    transform: translate3d(33.333%, 0, 0);
+    left: 0;
+  }
+  .tour-info .carousel-showsixmoveone .carousel-inner > .item.active.left,
+  .tour-info .carousel-showsixmoveone .carousel-inner > .item.prev {
+    -webkit-transform: translate3d(-33.333%, 0, 0);
+    transform: translate3d(-33.333%, 0, 0);
+    left: 0;
+  }
+  .tour-info .carousel-showsixmoveone .carousel-inner > .item.left,
+  .tour-info .carousel-showsixmoveone .carousel-inner > .item.prev.right,
+  .tour-info .carousel-showsixmoveone .carousel-inner > .item.active {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    left: 0;
+  }
+}

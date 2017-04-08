@@ -1,0 +1,26 @@
+$screen-xs: 320px;
+$screen-sm: 768px;
+$screen-md: 1024px;
+$screen-lg: 1600px;
+
+$container-tablet: 720px;
+$container-desktop: 940px;
+$container-large-desktop: 1500px;
+
+@mixin container-fluid {
+  width: auto;
+  @media #{$tablet-width} {
+    width: 93%;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+}
+
+@mixin clearfix {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+

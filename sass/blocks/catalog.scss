@@ -1,0 +1,96 @@
+.catalog {
+  padding-bottom: 5px;
+}
+
+.catalog__title {
+  font-family: "Intro", sans-serif;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 400;
+  text-align: center;
+  color: #009dff;
+}
+
+.catalog > div {
+  padding: 0;
+}
+
+.catalog__item {
+  position: relative;
+  min-height: 185px;
+  padding-top: 55%;
+  margin-bottom: 14px;
+  border-radius: 10px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: #ccc;
+  &:last-child {
+    /*/margin-bottom: 0;*/
+  }
+  &--europe {
+    background-image: url("../../img/excursion-on-europe.jpg");
+  }
+  &--czech {
+    background-image: url("../../img/excursion-on-czech.jpg");
+  }
+  &--praha {
+    background-image: url("../../img/excursion-on-praha.jpg");
+  }
+  &--packet {
+    background-image: url("../../img/excursion-packet.jpg");
+  }
+}
+
+.catalog__item-title {
+  position: absolute;
+  left: -10px;
+  right: -10px;
+  bottom: 35px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #ff4800;
+  &::before,
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -6px;
+    border-width: 3px 5px;
+    border-style: solid;
+    border-color: #c13300 #c13300 transparent transparent;
+  }
+  &::after {
+    right: 0;
+    border-color: #c13300 transparent transparent #c13300;
+  }
+}
+
+.catalog__item .btn {
+  position: relative;
+  //bottom: 11px;
+  left: 50%;
+  width: auto;
+  margin-left: -61px;
+  padding-left: 23px;
+  padding-right: 23px;
+  border-width: 1px;
+}
+
+.catalog__bottom-half {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-top: 10px;
+  padding-bottom: 9px;
+  background-color:  rgba(0, 45, 73, 0.68);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}

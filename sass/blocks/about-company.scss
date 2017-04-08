@@ -1,0 +1,29 @@
+.about-company {
+  padding-bottom: 10px;
+  font-size: 14px;
+  font-weight: 400;
+  background-color: #bee7ff;
+  color: #002d40;
+}
+
+.about-company__title {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-family: "Intro", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+  color: #009dff;
+}
+
+.about-company__text-left,
+.about-company__text-right {
+  padding: 0;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: justify;
+}
+
+.about-company__text-right {
+  display: none;
+}

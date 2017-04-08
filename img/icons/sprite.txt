@@ -1,0 +1,317 @@
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-adv-1 {
+    width: 165px;
+    height: 165px;
+    background-position: -5px -5px;
+}
+
+.sprite-adv-2 {
+    width: 165px;
+    height: 165px;
+    background-position: -180px -5px;
+}
+
+.sprite-adv-3 {
+    width: 165px;
+    height: 165px;
+    background-position: -355px -5px;
+}
+
+.sprite-adv-4 {
+    width: 165px;
+    height: 165px;
+    background-position: -5px -180px;
+}
+
+.sprite-adv-5 {
+    width: 165px;
+    height: 165px;
+    background-position: -180px -180px;
+}
+
+.sprite-adv-6 {
+    width: 165px;
+    height: 165px;
+    background-position: -355px -180px;
+}
+
+.sprite-arrow {
+    width: 9px;
+    height: 17px;
+    background-position: -5px -355px;
+}
+
+.sprite-basket {
+    width: 36px;
+    height: 35px;
+    background-position: -24px -355px;
+}
+
+.sprite-basket-blue {
+    width: 31px;
+    height: 30px;
+    background-position: -70px -355px;
+}
+
+.sprite-bus {
+    width: 36px;
+    height: 38px;
+    background-position: -111px -355px;
+}
+
+.sprite-bus-orange {
+    width: 36px;
+    height: 38px;
+    background-position: -157px -355px;
+}
+
+.sprite-calendar {
+    width: 23px;
+    height: 23px;
+    background-position: -203px -355px;
+}
+
+.sprite-calendar-orange {
+    width: 40px;
+    height: 40px;
+    background-position: -236px -355px;
+}
+
+.sprite-castle {
+    width: 41px;
+    height: 41px;
+    background-position: -286px -355px;
+}
+
+.sprite-castle-orange {
+    width: 41px;
+    height: 41px;
+    background-position: -337px -355px;
+}
+
+.sprite-cruiser {
+    width: 46px;
+    height: 32px;
+    background-position: -388px -355px;
+}
+
+.sprite-cruiser-orange {
+    width: 46px;
+    height: 32px;
+    background-position: -444px -355px;
+}
+
+.sprite-dark-people {
+    width: 31px;
+    height: 29px;
+    background-position: -500px -355px;
+}
+
+.sprite-dinner {
+    width: 44px;
+    height: 36px;
+    background-position: -388px -397px;
+}
+
+.sprite-dinner-orange {
+    width: 44px;
+    height: 36px;
+    background-position: -442px -397px;
+}
+
+.sprite-dot {
+    width: 10px;
+    height: 10px;
+    background-position: -203px -394px;
+}
+
+.sprite-email {
+    width: 28px;
+    height: 28px;
+    background-position: -500px -394px;
+}
+
+.sprite-eurocomp-icons-flags {
+    width: 174px;
+    height: 37px;
+    background-position: -5px -443px;
+}
+
+.sprite-facebook {
+    width: 48px;
+    height: 48px;
+    background-position: -189px -443px;
+}
+
+.sprite-flag-tour {
+    width: 59px;
+    height: 58px;
+    background-position: -247px -432px;
+}
+
+.sprite-foots {
+    width: 36px;
+    height: 38px;
+    background-position: -316px -432px;
+}
+
+.sprite-foots-orange {
+    width: 36px;
+    height: 38px;
+    background-position: -496px -432px;
+}
+
+.sprite-group-people {
+    width: 31px;
+    height: 29px;
+    background-position: -316px -480px;
+}
+
+.sprite-instagram {
+    width: 48px;
+    height: 48px;
+    background-position: -362px -443px;
+}
+
+.sprite-left-arrow {
+    width: 13px;
+    height: 26px;
+    background-position: -420px -480px;
+}
+
+.sprite-light-arrow {
+    width: 9px;
+    height: 18px;
+    background-position: -5px -394px;
+}
+
+.sprite-linkedin {
+    width: 48px;
+    height: 48px;
+    background-position: -443px -480px;
+}
+
+.sprite-logo {
+    width: 67px;
+    height: 67px;
+    background-position: -530px -5px;
+}
+
+.sprite-moon {
+    width: 42px;
+    height: 34px;
+    background-position: -530px -82px;
+}
+
+.sprite-moon-orange {
+    width: 42px;
+    height: 34px;
+    background-position: -530px -126px;
+}
+
+.sprite-odnoklassniki {
+    width: 48px;
+    height: 48px;
+    background-position: -530px -170px;
+}
+
+.sprite-password {
+    width: 15px;
+    height: 14px;
+    background-position: -582px -82px;
+}
+
+.sprite-phone {
+    width: 28px;
+    height: 28px;
+    background-position: -582px -106px;
+}
+
+.sprite-right-arrow {
+    width: 13px;
+    height: 26px;
+    background-position: -588px -144px;
+}
+
+.sprite-search {
+    width: 16px;
+    height: 16px;
+    background-position: -588px -180px;
+}
+
+.sprite-search-small {
+    width: 16px;
+    height: 16px;
+    background-position: -588px -206px;
+}
+
+.sprite-shopping {
+    width: 41px;
+    height: 41px;
+    background-position: -530px -228px;
+}
+
+.sprite-shopping-orange {
+    width: 41px;
+    height: 41px;
+    background-position: -530px -279px;
+}
+
+.sprite-time {
+    width: 28px;
+    height: 28px;
+    background-position: -581px -232px;
+}
+
+.sprite-time-dark {
+    width: 28px;
+    height: 28px;
+    background-position: -581px -270px;
+}
+
+.sprite-trash {
+    width: 28px;
+    height: 28px;
+    background-position: -581px -308px;
+}
+
+.sprite-twitter {
+    width: 48px;
+    height: 48px;
+    background-position: -541px -346px;
+}
+
+.sprite-user {
+    width: 14px;
+    height: 14px;
+    background-position: -24px -404px;
+}
+
+.sprite-visa-mastercard {
+    width: 115px;
+    height: 34px;
+    background-position: -5px -538px;
+}
+
+.sprite-vkontakte {
+    width: 48px;
+    height: 48px;
+    background-position: -542px -404px;
+}
+
+.sprite-weekly-calendar {
+    width: 40px;
+    height: 40px;
+    background-position: -542px -462px;
+}
+
+.sprite-youtube {
+    width: 48px;
+    height: 48px;
+    background-position: -130px -512px;
+}

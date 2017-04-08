@@ -1,0 +1,184 @@
+.tour-description {
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+.tour-description > div {
+  position: relative;
+  padding: 0;
+}
+
+.tour__week {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.tour__week-title {
+  display: block;
+  padding-top: 12px;
+  padding-bottom: 6px;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #002d49;
+  text-align: center;
+}
+
+.tour__week-day {
+  display: inline-block;
+  vertical-align: top;
+  width: 26px;
+  height: 26px;
+  padding-top: 4px;
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
+  color: #ffa480;
+  border: 2px solid #ffa480;
+  border-radius: 50%;
+  &--active {
+    color: #fff;
+    background-color: #ff4b00;
+    border-color: #ff4b00;
+  }
+}
+
+.tour__time {
+  display: inline-block;
+  position: relative;
+  padding-left: 50px;
+  margin-bottom: 15px;
+  text-align: center;
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 5px;
+    top: -1px;
+    width: 36px;
+    height: 36px;
+    background-image: url("../../img/icons/time-blue.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.tour__time-duration,
+.tour__time-start {
+  display: block;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 300;
+  text-align: left;
+  color: #002d49;
+}
+
+.tour__time-duration {
+  margin-bottom: 5px;
+}
+
+.tour__time-hours,
+.tour__time-start-hours {
+  font-weight: 400;
+}
+
+.tour__type-list {
+  margin-bottom: 15px;
+}
+
+.tour__type-item {
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  width: 32%;
+  padding-top: 40px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #002d49;
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 5px;
+    left: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  &--bus::before {
+    width: 36px;
+    height: 38px;
+    margin-left: -18px;
+    background-image: url("../../img/icons/bus-orange.png");
+  }
+  &--foot::before {
+    width: 33px;
+    height: 35px;
+    margin-left: -16.5px;
+    background-image: url("../../img/icons/foot-walk-orange.png");
+  }
+  &--group::before {
+    width: 35px;
+    height: 35px;
+    margin-left: -17.5px;
+    background-image: url("../../img/icons/group-orange.png");
+  }
+}
+
+.tour__place {
+  position: relative;
+  padding-left: 50px;
+  text-align: left;
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 5px;
+    width: 38px;
+    height: 38px;
+    background-image: url("../../img/icons/map-label-blue.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.tour__place-title {
+  display: block;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 700;
+  color: #002d49;
+}
+
+.tour__place-text {
+  font-size: 14px;
+  line-height: 20px;
+  color: #002d49;
+  font-weight: 300;
+}
+
+.tour__place-text a {
+  font-size: 14px;
+  font-style: italic;
+  color: #009eff;
+  text-decoration: underline;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.tour-description .rating {
+  text-align: left;
+}
+
+.tour-description .page-link {
+  position: absolute;
+  left: 85px;
+  display: block;
+  color: #002d49;
+  font-weight: 300;
+  &:hover {
+    text-decoration: none;
+  }
+}
+

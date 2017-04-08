@@ -1,0 +1,33 @@
+.tour-buy {
+  padding-top: 10px;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 700;
+  text-align: center;
+  color: #002d49;
+}
+
+.tour-buy > div {
+  padding: 0;
+}
+
+.tour-buy .btn {
+  width: 85%;
+  margin-bottom: 15px;
+}
+
+.tour-buy__price-office,
+.tour-buy__price-site {
+  display: inline-block;
+  font-size: 16px;
+  line-height: 16px;
+  margin-bottom: 5px;
+}
+
+.tour-buy__price-office {
+  color: #009eff;
+}
+
+.tour-buy__price-site {
+  color: #ff4700;
+}

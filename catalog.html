@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Eurocomp | Каталог экскурсий</title>
+  <!-- build:css -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- endbuild -->
+</head>
+
+<body class="page-body">
+  <header class="page-header">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-3 page-header__logo">
+          <a href="index.html"><img src="img/logo.png"></a>
+          <div class="page-header__title">
+            <h1 class="page-header__name">
+              Eurocomp
+            </h1>
+            <b class="page-header__caption">
+              Prague Tour Agency
+            </b>
+          </div>
+        </div>
+        <div class="hidden-xs col-sm-3 page-header__phones-email">
+          <div class="row">
+            <div class="col-sm-6 page-header__phones">
+              <b class="page-header__phone">+ (420) 775 621 122</b>
+              <b class="page-header__phone">+ (420) 775 094 014</b>
+            </div>
+            <div class="col-sm-6 page-header__emails">
+              <b class="page-header__email">info@eurocomp.com</b>
+            </div>
+          </div>
+          <form role="form">
+            <div class="input-group page-header__search">
+              <input type="text" class="form-control" placeholder="Поиск" aria-describedby="sizing-addon1">
+              <button type="submit" class="btn btn--submit">Найти</button>
+            </div>
+          </form>
+        </div>
+        <div class="hidden-xs col-sm-3 page-header__login-register">
+          <form role="form" class="form-inline">
+            <div class="row">
+              <div class="form-group col-sm-6 page-header__login">
+                <input type="text" class="form-control" id="login" placeholder="Логин">
+              </div>
+              <div class="form-group col-sm-6 page-header__pass">
+                <input type="password" class="form-control" id="pass" placeholder="Пароль">
+              </div>
+            </div>
+            <div class="page-header__enter-register">
+              <button type="submit" class="btn btn--submit">Вход</button>
+              <a class="page-link" href="#">Регистрация</a>
+            </div>
+          </form>
+        </div>
+        <div class="col-sm-3 page-header__basket">
+          <div class="page-header__basket-icon">
+            <div class="page-header__basket-label">
+              <span class="page-header__basket-count">15</span>
+            </div>
+          </div>
+          <b class="hidden-xs page-header__sum">
+            На сумму: <span class="page-header__total-sum">158.123,00</span>
+          </b>
+          <a href="#" class="hidden-xs btn btn--accent">Корзина</a>
+        </div>
+      </div>
+    </div>
+    <button type="button" class="navbar__toggle"></button>
+    <div class="page-header__basket-info-modal page-header__basket-info-modal--closed">
+      <div class="page-header__basket-info">
+        <div class="page-header__basket-info-wrapper">
+          <b class="page-header__basket-info-title">В корзине</b>
+          <span class="page-header__basket-info-total-count">15</span> экскурсий
+          <b class="page-header__basket-info-title">На сумму:</b>
+          <b class="page-header__basket-info-total-sum">155.236,00 €</b>
+        </div>
+        <a href="#" class="btn btn--accent">Оформить заказ</a>
+        <div class="page-header__basket-info-close"></div>
+      </div>
+    </div>
+    <div class="navbar__modal navbar__modal--closed">
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <li><a href="#">Экскурсии по Чехии</a></li>
+              <li><a href="#">Экскурсии по Праге</a></li>
+              <li><a href="#">Экскурсии по Европе</a></li>
+              <li><a href="#">Пакеты экскурсий</a></li>
+              <li><a href="#">Трансфер</a></li>
+              <li><a href="#">Проживание</a></li>
+              <li><a href="#">Инфоцентр</a></li>
+            </ul>
+          </div>
+          <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+        <button class="navbar__close" type="button"></button>
+      </nav>
+    </div>
+  </header>
+  <section class="catalog">
+    <div class="container">
+    <h2 class="catalog__title">
+        Каталог экскурсий
+      </h2>
+      <div class="row">
+        
+        <div class="col-sm-6 col-lg-4">
+          <div class="catalog__item catalog__item--europe">
+            <h3 class="catalog__item-title">
+            Экскурсии по Европе
+          </h3>
+            <div class="catalog__bottom-half">
+              <a href="#" class="btn btn--more">Подробнее</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4">
+          <div class="catalog__item catalog__item--czech">
+            <h3 class="catalog__item-title">
+            Экскурсии по Чехии
+          </h3>
+            <div class="catalog__bottom-half">
+              <a href="#" class="btn btn--more">Подробнее</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4">
+          <div class="catalog__item catalog__item--praha">
+            <h3 class="catalog__item-title">
+            Экскурсии по Праге
+          </h3>
+            <div class="catalog__bottom-half">
+              <a href="#" class="btn btn--more">Подробнее</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4">
+          <div class="catalog__item catalog__item--packet">
+            <h3 class="catalog__item-title">
+            Выгодные пакетные предложения
+          </h3>
+            <div class="catalog__bottom-half">
+              <a href="#" class="btn btn--more">Подробнее</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4">
+          <div class="catalog__item catalog__item--europe">
+            <h3 class="catalog__item-title">
+            Экскурсии по Европе
+          </h3>
+            <div class="catalog__bottom-half">
+              <a href="#" class="btn btn--more">Подробнее</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4">
+          <div class="catalog__item catalog__item--czech">
+            <h3 class="catalog__item-title">
+            Экскурсии по Чехии
+          </h3>
+            <div class="catalog__bottom-half">
+              <a href="#" class="btn btn--more">Подробнее</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="visible-xs have-question">
+    <b class="have-question__title">
+      Остались вопросы?
+    </b>
+    <a href="#" class="btn btn--more">Связаться с нами</a>
+  </div>
+  <footer class="page-footer">
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <div class="form-group">
+            <input type="text" class="form-control" id="exampleInputName2" placeholder="Поиск">
+          </div>
+          <ul class="hidden-xs nav navbar-nav">
+            <li class="active"><a>Экскурсии по Чехии <span class="sr-only">(current)</span></a></li>
+            <li><a href="#">Экскурсии по Праге</a></li>
+            <li><a href="#">Экскурсии по Европе</a></li>
+            <li><a href="#">Пакеты экскурсий</a></li>
+            <li><a href="#">Трансфер</a></li>
+            <li><a href="#">Проживание</a></li>
+            <li><a href="#">Инфоцентр</a></li>
+          </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container-fluid -->
+    </nav>
+    <div class="page-footer__contacts-basket">
+      <div class="container">
+        <div class="col-sm-4 page-footer__contacts">
+          <div class="page-footer__phones">
+            <b class="page-footer__phone">
+              + (420) 775 621 122 
+            </b>
+            <b class="page-footer__phone">
+              + (420) 775 094 014
+            </b>
+          </div>
+          <br>
+          <div class="page-footer__emails">
+            <b class="page-footer__email">
+              info@eurocomp.com
+            </b>
+          </div>
+        </div>
+        <div class="col-sm-4 page-footer__social">
+          <b class="page-footer__social-title">
+            Мы в соцсетях:
+          </b>
+          <div class="page-footer__social-list">
+            <a class="social-link social-link--fb" href="#">Мы в Facebook</a>
+            <a class="social-link social-link--tw" href="#">Мы в Twitter</a>
+            <a class="social-link social-link--ld" href="#">Мы в LinkedIn</a>
+            <a class="social-link social-link--vk" href="#">Мы во ВКонтакте</a>
+            <a class="social-link social-link--ok" href="#">Мы в Одноклассниках</a>
+            <a class="social-link social-link--yt" href="#">Мы в YouTube</a>
+            <a class="social-link social-link--in" href="#">Мы в Instagram</a>
+          </div>
+        </div>
+        <div class="hidden-xs col-sm-4 page-footer__basket">
+          <div class="page-footer__basket-count">
+            <span class="badge badge-basket">15</span>
+          </div>
+          <b class="page-footer__total">
+              На сумму: <span class="page-footer__amount">156.123,00 $</span>
+              <a href="#" class="btn btn-default btn-accent">Корзина</a>
+            </b>
+          <br>
+          <!-- <a href="#" class="btn btn-default btn-accent">Корзина</a> -->
+        </div>
+      </div>
+    </div>
+    <div class="page-footer__copyright">
+      <b class="page-footer__copyright-text">
+        ©  2017 Loremipsum.com
+      </b>
+    </div>
+  </footer>
+  <!-- build:js -->
+  <script src="js/ajquery311.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/script.js"></script>
+  <!-- endbuild -->
+</body>
+
+</html>

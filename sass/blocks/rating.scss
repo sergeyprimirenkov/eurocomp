@@ -1,0 +1,16 @@
+.rating {
+  font-size: 16px;
+  color: #002d49;
+}
+
+.rating__star {
+  //display: inline-block;
+  color: #ff4700;
+  opacity: .5;
+  &--like {
+    opacity: 1;
+  }
+  &:hover {
+    opacity: 1;
+  }
+}

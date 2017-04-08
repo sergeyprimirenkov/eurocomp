@@ -1,0 +1,92 @@
+.tour-services {
+  padding-top: 5px;
+  padding-bottom: 15px;
+  text-align: center;
+  background-color: #d6efff;
+}
+
+.tour-services__title {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  color: #2e536b;
+}
+
+.tour-services__item {
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  width: 32%;
+  padding-top: 50px;
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 5px;
+    left: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  &--gid::before {
+    width: 38px;
+    height: 40px;
+    margin-left: -19px;
+    background-image: url("../../img/icons/gid.png");
+  }
+  &--gid-active::before {
+    width: 38px;
+    height: 40px;
+    margin-left: -19px;
+    background-image: url("../../img/icons/gid-blue.png");
+  }
+  &--bus::before {
+    width: 38px;
+    height: 40px;
+    margin-left: -19px;
+    background-image: url("../../img/icons/bus.png");
+  }
+  &--bus-active::before {
+    width: 38px;
+    height: 40px;
+    margin-left: -19px;
+    background-image: url("../../img/icons/bus-blue.png");
+  }
+  &--radio::before {
+    width: 40px;
+    height: 40px;
+    margin-left: -20px;
+    background-image: url("../../img/icons/radio.png");
+  }
+  &--radio-active::before {
+    width: 40px;
+    height: 40px;
+    margin-left: -20px;
+    background-image: url("../../img/icons/radio-blue.png");
+  }
+  &--support::before {
+    width: 40px;
+    height: 40px;
+    margin-left: -20px;
+    background-image: url("../../img/icons/support.png");
+  }
+  &--support-active::before {
+    width: 40px;
+    height: 40px;
+    margin-left: -20px;
+    background-image: url("../../img/icons/support-blue.png");
+  }
+  &--castles::before {
+    width: 40px;
+    height: 40px;
+    margin-left: -20px;
+    background-image: url("../../img/icons/castles.png");
+  }
+  &--castles-active::before {
+    width: 40px;
+    height: 40px;
+    margin-left: -20px;
+    background-image: url("../../img/icons/castles-blue.png");
+  }
+}

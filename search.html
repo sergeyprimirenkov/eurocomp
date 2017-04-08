@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Eurocomp | Расширенный поиск</title>
+  <!-- build:css -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- endbuild -->
+</head>
+
+<body class="page-body">
+  <header class="page-header">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-3 page-header__logo">
+          <a href="index.html"><img src="img/logo.png"></a>
+          <div class="page-header__title">
+            <h1 class="page-header__name">
+              Eurocomp
+            </h1>
+            <b class="page-header__caption">
+              Prague Tour Agency
+            </b>
+          </div>
+        </div>
+        <div class="hidden-xs col-sm-3 page-header__phones-email">
+          <div class="row">
+            <div class="col-sm-6 page-header__phones">
+              <b class="page-header__phone">+ (420) 775 621 122</b>
+              <b class="page-header__phone">+ (420) 775 094 014</b>
+            </div>
+            <div class="col-sm-6 page-header__emails">
+              <b class="page-header__email">info@eurocomp.com</b>
+            </div>
+          </div>
+          <form role="form">
+            <div class="input-group page-header__search">
+              <input type="text" class="form-control" placeholder="Поиск" aria-describedby="sizing-addon1">
+              <button type="submit" class="btn btn--submit">Найти</button>
+            </div>
+          </form>
+        </div>
+        <div class="hidden-xs col-sm-3 page-header__login-register">
+          <form role="form" class="form-inline">
+            <div class="row">
+              <div class="form-group col-sm-6 page-header__login">
+                <input type="text" class="form-control" id="login" placeholder="Логин">
+              </div>
+              <div class="form-group col-sm-6 page-header__pass">
+                <input type="password" class="form-control" id="pass" placeholder="Пароль">
+              </div>
+            </div>
+            <div class="page-header__enter-register">
+              <button type="submit" class="btn btn--submit">Вход</button>
+              <a class="page-link" href="#">Регистрация</a>
+            </div>
+          </form>
+        </div>
+        <div class="col-sm-3 page-header__basket">
+          <div class="page-header__basket-icon">
+            <div class="page-header__basket-label">
+              <span class="page-header__basket-count">15</span>
+            </div>
+          </div>
+          <b class="hidden-xs page-header__sum">
+            На сумму: <span class="page-header__total-sum">158.123,00</span>
+          </b>
+          <a href="#" class="hidden-xs btn btn--accent">Корзина</a>
+        </div>
+      </div>
+    </div>
+    <button type="button" class="navbar__toggle"></button>
+    <div class="page-header__basket-info-modal page-header__basket-info-modal--closed">
+      <div class="page-header__basket-info">
+        <div class="page-header__basket-info-wrapper">
+          <b class="page-header__basket-info-title">В корзине</b>
+          <span class="page-header__basket-info-total-count">15</span> экскурсий
+          <b class="page-header__basket-info-title">На сумму:</b>
+          <b class="page-header__basket-info-total-sum">155.236,00 €</b>
+        </div>
+        <a href="#" class="btn btn--accent">Оформить заказ</a>
+        <div class="page-header__basket-info-close"></div>
+      </div>
+    </div>
+    <div class="navbar__modal navbar__modal--closed">
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <li><a href="#">Экскурсии по Чехии</a></li>
+              <li><a href="#">Экскурсии по Праге</a></li>
+              <li><a href="#">Экскурсии по Европе</a></li>
+              <li><a href="#">Пакеты экскурсий</a></li>
+              <li><a href="#">Трансфер</a></li>
+              <li><a href="#">Проживание</a></li>
+              <li><a href="#">Инфоцентр</a></li>
+            </ul>
+          </div>
+          <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+        <button class="navbar__close" type="button"></button>
+      </nav>
+    </div>
+  </header>
+  <section class="extended-search">
+    <div class="container">
+      <h2 class="extended-search__title">
+      Расширенный поиск экскурсии
+    </h2>
+    <form role="form" action="#">
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="extended-search__flags"></div>
+          <a href="#" class="btn">Выбор страны <span class="btn__change"></span></a>
+            <div class="btn-group" role="group" aria-label="">
+              <button type="button" class="btn btn--default btn--default-active">Групповая</button>
+              <button type="button" class="btn btn--default">Индивидуальная</button>
+            </div>
+            <input type="checkbox" class="form-control" id="transfer">
+            <label for="transfer">Нужен трансфер аэропорт/отель</label>
+        </div>
+        <div class="col-sm-4">
+          <div class="row">
+            <div class="col-xs-6">
+              <div class="form-group form-group--date-in">
+                <label for="date-in">Дата приезда</label>
+                <div class="excursion__calendar"></div>
+                <input type="text" class="form-control" id="date-in" placeholder="10-12-2017">
+              </div>
+              <div class="excursion__count-adult">
+                <b class="excursion__count-title">
+              Взрослые <span class="excursion__count-age">от 12 лет</span>
+            </b>
+                <div class="excursion__count-list">
+                  <input type="radio" name="adult-count" id="adult-0">
+                  <label for="adult-0" class="excursion__count-item">0</label>
+                  <input type="radio" name="adult-count" id="adult-1">
+                  <label for="adult-1" class="excursion__count-item">1</label>
+                  <input type="radio" name="adult-count" id="adult-2">
+                  <label for="adult-2" class="excursion__count-item">2</label>
+                  <input type="radio" name="adult-count" id="adult-3">
+                  <label for="adult-3" class="excursion__count-item">3</label>
+                  <input type="radio" name="adult-count" id="adult-4">
+                  <label for="adult-4" class="excursion__count-item">4</label>
+                  <input type="radio" name="adult-count" id="adult-5" checked>
+                  <label for="adult-5" class="excursion__count-item">5</label>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-6">
+              <div class="form-group form-group--date-out">
+                <label for="date-out">Дата отъезда</label>
+                <div class="excursion__calendar"></div>
+                <input type="text" class="form-control" id="date-out" placeholder="10-12-2017">
+              </div>
+              <div class="excursion__count-children">
+                <b class="excursion__count-title">
+                Дети <span class="excursion__count-age">до 12 лет</span>
+              </b>
+                <div class="excursion__count-list">
+                  <input type="radio" name="children-count" checked>
+                  <label for="children-0" class="excursion__count-item">0</label>
+                  <input type="radio" name="children-count">
+                  <label for="children-1" class="excursion__count-item">1</label>
+                  <input type="radio" name="children-count">
+                  <label for="children-2" class="excursion__count-item">2</label>
+                  <input type="radio" name="children-count">
+                  <label for="children-3" class="excursion__count-item">3</label>
+                  <input type="radio" name="children-count">
+                  <label for="children-4" class="excursion__count-item">4</label>
+                  <input type="radio" name="children-count">
+                  <label for="children-5" class="excursion__count-item">5</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-9">
+              <input type="checkbox" class="form-control" id="count-people">
+              <label for="count-people">Группа/количество человек</label>
+            </div>
+            <div class="col-xs-3">
+              <input type="text" class="form-control count-people" value="0" disabled>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <button type="submit" class="btn btn--accent">Распланировать мои экскурсии</button>
+          <a href="catalog.html" class="btn btn--default">Каталог экскурсий</a>
+          <span class="excursion__help">Нужна помощь в подборе?</span>
+          <a class="btn btn--default">Связаться с нами</a>
+        </div>
+      </div>
+      <div class="row extended-search__list">
+        <div class="extended-search__item">
+          <input type="radio" name="extended-search-type" id="packet">
+          <label for="packet" class="extended-search__item-caption">Пакеты экскурсий <div class="extended-search__item-icon extended-search__item-icon--packet"></div></label>
+        </div>
+        <div class="extended-search__item">
+          <input type="radio" name="extended-search-type" id="city">
+          <label for="city" class="extended-search__item-caption">По городу <div class="extended-search__item-icon extended-search__item-icon--city"></div></label>
+        </div>
+        <div class="extended-search__item">
+          <input type="radio" name="extended-search-type" id="bus">
+          <label for="bus" class="extended-search__item-caption">Выездные <div class="extended-search__item-icon extended-search__item-icon--bus"></div></label>
+        </div>
+        <div class="extended-search__item">
+          <input type="radio" name="extended-search-type" id="river">
+          <label for="river" class="extended-search__item-caption">Речная <div class="extended-search__item-icon extended-search__item-icon--river"></div></label>
+        </div>
+        <div class="extended-search__item">
+          <input type="radio" name="extended-search-type" id="dinner">
+          <label for="dinner" class="extended-search__item-caption">Гастроном- ическая <div class="extended-search__item-icon extended-search__item-icon--dinner"></div></label>
+        </div>
+        <div class="extended-search__item">
+          <input type="radio" name="extended-search-type" id="calendar">
+          <label for="calendar">Много- дневная <div class="extended-search__item-icon extended-search__item-icon--calendar"></div></label>
+        </div>
+        <div class="extended-search__item">
+          <input type="radio" name="extended-search-type" id="foot">
+          <label for="foot" class="extended-search__item-caption">Пешая <div class="extended-search__item-icon extended-search__item-icon--foot"></div></label>
+        </div>
+        <div class="extended-search__item">
+          <input type="radio" name="extended-search-type" id="evening">
+          <label for="evening" class="extended-search__item-caption">Вечерняя <div class="extended-search__item-icon extended-search__item-icon--evening"></div></label>
+        </div>
+      </div>
+      </form>
+    </div>
+  </section>
+  <section class="offer">
+    <div class="container">
+      <div class="row">
+        <h4 class="offer__title">
+          Результат подбора по вашему запросу:
+        </h4>
+        <div class="carousel carousel-showsixmoveone slide" id="carousel123">
+          <div class="carousel-inner">
+            <div class="item active">
+              <div class="col-xs-4">
+                <div class="offer__day">
+                  <b class="offer__day-title">
+              Сегодня
+            </b>
+                  <b class="offer__date">
+              01.12.17
+            </b>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="col-xs-4">
+                <div class="offer__day">
+                  <b class="offer__day-title">
+              Вторник
+            </b>
+                  <b class="offer__date">
+              02.12.17
+            </b>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="col-xs-4">
+                <div class="offer__day  offer__day--active">
+                  <b class="offer__day-title">
+              Среда
+            </b>
+                  <b class="offer__date">
+              03.12.17
+            </b>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="col-xs-4">
+                <div class="offer__day">
+                  <b class="offer__day-title">
+              Четверг
+            </b>
+                  <b class="offer__date">
+              04.12.17
+            </b>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="col-xs-4">
+                <div class="offer__day">
+                  <b class="offer__day-title">
+              Пятница
+            </b>
+                  <b class="offer__date">
+              05.12.17
+            </b>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="col-xs-4">
+                <div class="offer__day">
+                  <b class="offer__day-title">
+              Суббота
+            </b>
+                  <b class="offer__date">
+              06.12.17
+            </b>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="col-xs-4">
+                <div class="offer__day">
+                  <b class="offer__day-title">
+              Восресенье
+            </b>
+                  <b class="offer__date">
+              07.12.17
+            </b>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a class="left carousel-control" href="#carousel123" data-slide="prev"><span class="review__previous"></a>
+          <a class="right carousel-control" href="#carousel123" data-slide="next"><span class="review__next"></a>
+        </div>
+        <div class="row offer__list">
+          <div class="col-sm-6 offer__item">
+
+            <div class="offer__item-tour offer__item-tour--1">
+              <div class="offer__item-price">
+                20 &#8364;
+              </div>
+              <div class="offer__item-flag"></div>
+              <div class="offer__bottom-half">
+                <h5 class="offer__item-title">
+              Тур по Праге
+            </h5>
+                <b class="offer__item-description">
+              Обзорная экскурсия по Праге
+            </b>
+                <div class="offer__item-toggle-block--1">
+                  <div class="offer__week-rating">
+                    <div class="col-xs-6 offer__item-week">
+                      <b class="offer__item-week-title">
+                Дни проведения
+              </b>
+                      <div class="offer__item-week-days">
+                        <span class="offer__item-day offer__item-day--active">Пн</span>
+                        <span class="offer__item-day">Вт</span>
+                        <span class="offer__item-day offer__item-day--active">Ср</span>
+                        <span class="offer__item-day">Чт</span>
+                        <span class="offer__item-day offer__item-day--active">Пт</span>
+                        <span class="offer__item-day offer__item-day--active">Сб</span>
+                        <span class="offer__item-day offer__item-day--active">Вс</span>
+                      </div>
+                    </div>
+                    <div class="col-xs-6 offer__item-rating">
+                      <div class="offer__item--stars">
+                        <b class="offer__item-stars-title">
+                  Рейтинг:
+                </b>
+                        <span class="offer__item-star offer__item-star--like" id="star1">&#9733;</span>
+                        <span class="offer__item-star offer__item-star--like" id="star2">&#9733;</span>
+                        <span class="offer__item-star offer__item-star--like" id="star3">&#9733;</span>
+                        <span class="offer__item-star offer__item-star--like" id="star4">&#9733;</span>
+                        <span class="offer__item-star" id="star5">&#9733;</span>
+                      </div>
+                      <a href="#" class="page-link">8 отзывов</a>
+                    </div>
+                  </div>
+                  <div class="offer__info-type">
+                  <div class="row">
+                    <div class="col-sm-6 offer__item-info">
+                      <b class="offer__item-duration">
+                Продолжительность: <span class="offer__item-hours">4 часа</span>
+              </b>
+                      <b class="offer__item-start">
+                Начало: <span class="offer__start-hours">11:00</span>
+              </b>
+                    </div>
+                    <div class="col-sm-6 offer__item-type">
+                      Групповая
+                    </div>
+                  </div>
+                  </div>
+                </div>
+              </div>
+              <div class="offer__item-buy">
+                <a class="btn btn--accent btn--accent-buy" href="#">Купить</a>
+                <span class="btn__basket"></span>
+                <a id="show" class="btn btn--more" href="#">Подробнее <span class="btn__more"></span></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 offer__item">
+            <div class="offer__item-tour offer__item-tour--1">
+              <div class="offer__item-price">
+                20 &#8364;
+              </div>
+              <div class="offer__item-flag"></div>
+              <div class="offer__bottom-half">
+                <h5 class="offer__item-title">
+              Тур по Праге
+            </h5>
+                <b class="offer__item-description">
+              Обзорная экскурсия по Праге
+            </b>
+                <div class="offer__item-toggle-block--1">
+                  <div class="offer__week-rating">
+                    <div class="col-xs-6 offer__item-week">
+                      <b class="offer__item-week-title">
+                Дни проведения
+              </b>
+                      <div class="offer__item-week-days">
+                        <span class="offer__item-day offer__item-day--active">Пн</span>
+                        <span class="offer__item-day">Вт</span>
+                        <span class="offer__item-day offer__item-day--active">Ср</span>
+                        <span class="offer__item-day">Чт</span>
+                        <span class="offer__item-day offer__item-day--active">Пт</span>
+                        <span class="offer__item-day offer__item-day--active">Сб</span>
+                        <span class="offer__item-day offer__item-day--active">Вс</span>
+                      </div>
+                    </div>
+                    <div class="col-xs-6 offer__item-rating">
+                      <div class="offer__item--stars">
+                        <b class="offer__item-stars-title">
+                  Рейтинг:
+                </b>
+                        <span class="offer__item-star offer__item-star--like" id="star1">&#9733;</span>
+                        <span class="offer__item-star offer__item-star--like" id="star2">&#9733;</span>
+                        <span class="offer__item-star offer__item-star--like" id="star3">&#9733;</span>
+                        <span class="offer__item-star offer__item-star--like" id="star4">&#9733;</span>
+                        <span class="offer__item-star" id="star5">&#9733;</span>
+                      </div>
+                      <a href="#" class="page-link">8 отзывов</a>
+                    </div>
+                  </div>
+                  <div class="offer__info-type">
+                    <div class="col-sm-6 offer__item-info">
+                      <b class="offer__item-duration">
+                Продолжительность: <span class="offer__item-hours">4 часа</span>
+              </b>
+                      <b class="offer__item-start">
+                Начало: <span class="offer__start-hours">11:00</span>
+              </b>
+                    </div>
+                    <div class="col-sm-6 offer__item-type">
+                      Групповая
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="offer__item-buy">
+                <a class="btn btn--accent btn--accent-buy" href="#">Купить</a>
+                <span class="btn__basket"></span>
+                <a id="show" class="btn btn--more" href="#">Подробнее <span class="btn__more"></span></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 offer__item">
+            <div class="offer__item-tour offer__item-tour--1">
+              <div class="offer__item-price">
+                20 &#8364;
+              </div>
+              <div class="offer__item-flag"></div>
+              <div class="offer__bottom-half">
+                <h5 class="offer__item-title">
+              Тур по Праге
+            </h5>
+                <b class="offer__item-description">
+              Обзорная экскурсия по Праге
+            </b>
+                <div class="offer__item-toggle-block--1">
+                  <div class="offer__week-rating">
+                    <div class="col-xs-6 offer__item-week">
+                      <b class="offer__item-week-title">
+                Дни проведения
+              </b>
+                      <div class="offer__item-week-days">
+                        <span class="offer__item-day offer__item-day--active">Пн</span>
+                        <span class="offer__item-day">Вт</span>
+                        <span class="offer__item-day offer__item-day--active">Ср</span>
+                        <span class="offer__item-day">Чт</span>
+                        <span class="offer__item-day offer__item-day--active">Пт</span>
+                        <span class="offer__item-day offer__item-day--active">Сб</span>
+                        <span class="offer__item-day offer__item-day--active">Вс</span>
+                      </div>
+                    </div>
+                    <div class="col-xs-6 offer__item-rating">
+                      <div class="offer__item--stars">
+                        <b class="offer__item-stars-title">
+                  Рейтинг:
+                </b>
+                        <span class="offer__item-star offer__item-star--like" id="star1">&#9733;</span>
+                        <span class="offer__item-star offer__item-star--like" id="star2">&#9733;</span>
+                        <span class="offer__item-star offer__item-star--like" id="star3">&#9733;</span>
+                        <span class="offer__item-star offer__item-star--like" id="star4">&#9733;</span>
+                        <span class="offer__item-star" id="star5">&#9733;</span>
+                      </div>
+                      <a href="#" class="page-link">8 отзывов</a>
+                    </div>
+                  </div>
+                  <div class="offer__info-type">
+                    <div class="col-sm-6 offer__item-info">
+                      <b class="offer__item-duration">
+                Продолжительность: <span class="offer__item-hours">4 часа</span>
+              </b>
+                      <b class="offer__item-start">
+                Начало: <span class="offer__start-hours">11:00</span>
+              </b>
+                    </div>
+                    <div class="col-sm-6 offer__item-type">
+                      Групповая
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="offer__item-buy">
+                <a class="btn btn--accent btn--accent-buy" href="#">Купить</a>
+                <span class="btn__basket"></span>
+                <a id="show" class="btn btn--more" href="#">Подробнее <span class="btn__more"></span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="offer__show-all">
+          <a href="#" class="btn btn--more btn--all">Показать все <span class="btn__all"></span></a>
+        </div>
+      </div>
+  </section>
+  <div class="visible-xs have-question">
+    <b class="have-question__title">
+      Остались вопросы?
+    </b>
+    <a href="#" class="btn btn--more">Связаться с нами</a>
+  </div>
+  <footer class="page-footer">
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <div class="form-group">
+            <input type="text" class="form-control" id="exampleInputName2" placeholder="Поиск">
+          </div>
+          <ul class="hidden-xs nav navbar-nav">
+            <li class="active"><a>Экскурсии по Чехии <span class="sr-only">(current)</span></a></li>
+            <li><a href="#">Экскурсии по Праге</a></li>
+            <li><a href="#">Экскурсии по Европе</a></li>
+            <li><a href="#">Пакеты экскурсий</a></li>
+            <li><a href="#">Трансфер</a></li>
+            <li><a href="#">Проживание</a></li>
+            <li><a href="#">Инфоцентр</a></li>
+          </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container-fluid -->
+    </nav>
+    <div class="page-footer__contacts-basket">
+      <div class="container">
+        <div class="col-sm-4 page-footer__contacts">
+          <div class="page-footer__phones">
+            <b class="page-footer__phone">
+              + (420) 775 621 122 
+            </b>
+            <b class="page-footer__phone">
+              + (420) 775 094 014
+            </b>
+          </div>
+          <br>
+          <div class="page-footer__emails">
+            <b class="page-footer__email">
+              info@eurocomp.com
+            </b>
+          </div>
+        </div>
+        <div class="col-sm-4 page-footer__social">
+          <b class="page-footer__social-title">
+            Мы в соцсетях:
+          </b>
+          <div class="page-footer__social-list">
+            <a class="social-link social-link--fb" href="#">Мы в Facebook</a>
+            <a class="social-link social-link--tw" href="#">Мы в Twitter</a>
+            <a class="social-link social-link--ld" href="#">Мы в LinkedIn</a>
+            <a class="social-link social-link--vk" href="#">Мы во ВКонтакте</a>
+            <a class="social-link social-link--ok" href="#">Мы в Одноклассниках</a>
+            <a class="social-link social-link--yt" href="#">Мы в YouTube</a>
+            <a class="social-link social-link--in" href="#">Мы в Instagram</a>
+          </div>
+        </div>
+        <div class="hidden-xs col-sm-4 page-footer__basket">
+          <div class="page-footer__basket-count">
+            <span class="badge badge-basket">15</span>
+          </div>
+          <b class="page-footer__total">
+              На сумму: <span class="page-footer__amount">156.123,00 $</span>
+              <a href="#" class="btn btn-default btn-accent">Корзина</a>
+            </b>
+          <br>
+          <!-- <a href="#" class="btn btn-default btn-accent">Корзина</a> -->
+        </div>
+      </div>
+    </div>
+    <div class="page-footer__copyright">
+      <b class="page-footer__copyright-text">
+        ©  2017 Loremipsum.com
+      </b>
+    </div>
+  </footer>
+  <!-- build:js -->
+  <script src="js/ajquery311.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/script.js"></script>
+  <!-- endbuild -->
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+.modal {
+  overflow-y: auto;
+}
+
+.modal-dialog {
+  margin-top: 100px;
+}
+
+.modal-body {
+  position: relative;
+  padding: 0;
+}
+
+.modal-body img {
+  display: block;
+  width: 100%;
+}
+
+.modal-close {
+  position: absolute;
+  top: -7px;
+  right: -7px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 1px solid #009dff;
+  background-color: #fff;
+  cursor: pointer;
+  &::before,
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 2px;
+    width: 10px;
+    height: 1px;
+    background-color: #009dff;
+  }
+  &::before {
+    transform: rotate(45deg);
+  }
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
